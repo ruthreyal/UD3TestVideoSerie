@@ -21,8 +21,8 @@ public class TestSerie
 	
     
 	@Test
-	public void compareTo(Serie s) {
-		s = new Serie ("American Horror History", 11, "Terror", "Ryan Murphy y Brad Falchuk");
+	public void compareTo() {
+		Serie s = new Serie ("American Horror History", 11, "Terror", "Ryan Murphy y Brad Falchuk");
 		assertEquals (Serie.MENOR, serie.compareTo(s));
 		s= new Serie ("American Horror History", 4, "Terror", "Ryan Murphy y Brad Falchuk");
 		assertEquals (Serie.MAYOR, serie.compareTo(s));
@@ -40,8 +40,8 @@ public class TestSerie
 	}
 	
 	@Test
-	public void equals(Serie a){
-		a = new Serie("Strainger Things",5,"Ciencia Ficcion","Hermanos Duffer");
+	public void equals(){
+		Serie a = new Serie("Strainger Things",5,"Ciencia Ficcion","Hermanos Duffer");
 		assertEquals (serie.equals(a), true); 
     }
 	

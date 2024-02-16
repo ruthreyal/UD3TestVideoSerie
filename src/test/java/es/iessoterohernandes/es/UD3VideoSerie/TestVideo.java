@@ -21,8 +21,8 @@ public class TestVideo
 	
     
 	@Test
-	public void compareTo(Videojuego v) {
-		v = new Videojuego ("Resident evil", 250, "Plataforma", "Sony");
+	public void compareTo() {
+	Videojuego v = new Videojuego ("Resident evil", 250, "Plataforma", "Sony");
 		assertEquals(Videojuego.MENOR, videojuego.compareTo(v));
 		v = new Videojuego ("Resident evil", 350, "Plataforma", "Sony");
 		assertEquals(Videojuego.MAYOR, videojuego.compareTo(v));
@@ -40,8 +40,8 @@ public class TestVideo
 	}
 	
 	@Test
-	public void equals(Videojuego v){
-		v = videojuego = new Videojuego("Spiderman", 300, "Plataforma", "Sony");
+	public void equals(){
+		Videojuego v = new Videojuego("Spiderman", 300, "Plataforma", "Sony");
 		assertEquals (videojuego.equals(v), true); 
     }
 	
